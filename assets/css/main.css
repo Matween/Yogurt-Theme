@@ -30,16 +30,16 @@ body {
 
 @media only screen and (max-width: 720px) {
     body {
-        font-size: smaller
+        font-size: smaller!important;
     }
     nav ul {
-        font-size: smaller;
+        font-size: smaller!important;
     }
     .about {
-        font-size: smaller;
+        font-size: smaller!important;
     }
     .profession {
-        font-size: small;
+        font-size: small!important;
     }
 }
 
@@ -67,13 +67,13 @@ nav ul {
     text-transform: uppercase;
     letter-spacing: 0.25em;
     font-weight: 800;
-    font-size: medium;
+    font-size: larger;
 }
 
 nav ul li {
     text-decoration: none;
     display: inline-flex;
-    margin: 0 5%;
+    margin: 0.5em 5%;
 }
 
 #nav-blob {
