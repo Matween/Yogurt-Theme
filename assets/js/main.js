@@ -1,9 +1,9 @@
-const navBlob = document.querySelector('#nav-blob');
+var navBlob = document.querySelector('#nav-blob');
 
-window.addEventListener('scroll', () => {
-    if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
-        navBlob.style.top = "0";
+window.addEventListener('scroll', function() {
+    if (window.pageYOffset > 20) {
+        navBlob.style.top = '0px';
     } else {
-        navBlob.style.top = -1 * navBlob.clientHeight;
+        navBlob.style.top = (-1 * (navBlob.clientHeight)).toString() + 'px';
     }
 });

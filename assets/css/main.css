@@ -9,12 +9,6 @@
 }
 
 body {
-    background: #ffbda9;
-    background: url('../../img/bg.jpeg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
     font-family: "Source Sans Pro", Helvetica, sans-serif;
     line-height: 1.5;
     font-weight: 200;
@@ -24,6 +18,22 @@ body {
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
+    background: #ffbda9;
+    background: url('../../img/bg.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+p {
+    padding: 0;
+    margin: 0;
 }
 
 /* responsive font */
@@ -239,11 +249,16 @@ nav ul li {
     }
 }
 
+#footer-blog {
+    margin-bottom: 0;
+}
+
 #footer {
     width: 100%;
     background-color: #fce7e1;
     display: inline-block;
     padding-bottom: 50px;
+    margin-top: 0;
 }
 
 .footer-left {
